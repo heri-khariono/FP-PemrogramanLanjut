@@ -20,6 +20,7 @@ struct pelabuhan{
 
 int i=0;
 void tambah_data();
+void tampil_data();
 
 int main() {
 	int menu;
@@ -49,6 +50,7 @@ int main() {
 				break;
 			case 2 :
 				system("cls");
+				tampil_data();
 				getch();
 				goto utama;
 				break;
@@ -191,4 +193,31 @@ void tambah_data(){
 	i++;
 	getch();
 	system("cls");
+}
+
+void view(int j){
+	printf(" TAMPILAN DATA KE - %d    \n", j+1);
+	printf("+======================================================+\n");	
+	printf(" No. Tiket               : %d\n", data[j].no_tiket);	
+	printf(" No. Kendaraan           : %s\n", data[j].nopol);
+	printf(" Jenis Kendaraan         : %s\n", data[j].kjenis_kendaraan);
+	printf(" Bobot Kendaraan         : %d Ton\n", data[j].bobot);
+	printf(" Tujuan Pelabuhan        : %s\n", data[j].ktujuan);
+	printf(" Tanggal Pembelian Tiket : %d  %s %d\n",data[j].d, data[j].kbulan, data[j].y);	
+	printf("+======================================================+\n\n");	
+}
+
+void tampil_data(){
+	system("cls");
+	int j=0;
+	if (i==0){
+		printf ("\n\n\t\tData Kosong, harap mengisi data terlebih dahulu...\n\n");
+		getch();
+		system("cls");
+	}
+	else{
+		for(j=0;j<i;j++){
+			view(j);	
+		}
+	}
 }
