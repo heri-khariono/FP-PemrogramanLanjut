@@ -31,3 +31,23 @@ Tujuan yang akan dicapai dari final project ini adalah :
 <br/>
  4.	Dapat membuat program yang memiliki lebih fungsional
 </p>
+
+<h3>Manfaat</h3>
+<p>
+Manfaat dari final project ini adalah :
+	<br/>
+ 1.	Program dapat digunakan sesuai kebutuhan pengguna berdasarkan fitur yang telah tersedia.
+	<br/>
+ 2.	Bagi mahasiswa, final project ini dapat mengasah kemampuan, daya logika serta sebagai sarana penerapan dari teori yang telah didapat untuk diimplementasikan langsung berupa praktek.
+ </p>
+ 
+ <h3>Luaran</h3>
+ <p>
+ Luaran yang diharapkan dari final project ini adalah :
+	<br/>
+ 1.	Terciptanya Program Aplikasi Pelabuhan dalam bentuk file yang berekstensi (.c).
+ <br/>
+ 2.	Program Aplikasi Pelabuhan dapat berfungsi dengan baik sesuai harapan.
+	<br/>
+ 3.	Menyelesaikan tugas akhir dari mata kuliah pemrograman lanjut dengan baik.
+ </p>
