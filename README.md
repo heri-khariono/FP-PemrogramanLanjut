@@ -35,19 +35,24 @@ Tujuan yang akan dicapai dari final project ini adalah :
 <h3>Manfaat</h3>
 <p>
 Manfaat dari final project ini adalah :
-	<br/>
+<br/>
  1.	Program dapat digunakan sesuai kebutuhan pengguna berdasarkan fitur yang telah tersedia.
-	<br/>
+<br/>
  2.	Bagi mahasiswa, final project ini dapat mengasah kemampuan, daya logika serta sebagai sarana penerapan dari teori yang telah didapat untuk diimplementasikan langsung berupa praktek.
  </p>
  
  <h3>Luaran</h3>
  <p>
  Luaran yang diharapkan dari final project ini adalah :
-	<br/>
+<br/>
  1.	Terciptanya Program Aplikasi Pelabuhan dalam bentuk file yang berekstensi (.c).
- <br/>
+<br/>
  2.	Program Aplikasi Pelabuhan dapat berfungsi dengan baik sesuai harapan.
-	<br/>
+<br/>
  3.	Menyelesaikan tugas akhir dari mata kuliah pemrograman lanjut dengan baik.
  </p>
+
+<h3>Kesimpulan</h3>
+<p>
+Dari penjelasan diatas dapat disimpulkan bahwa final project yang kami kerjakan menggunakan bahasa pemrograman c ini mengimplementasikan metode searching berupaa jump search dan sorting berupa quick sort, selain itu didalam program ini mengutamakan kemudahan dan efektivitas dalam menuliskan source code, hal tersebut dilakukan untuk mempermudah pengguna dalam menggunakan program tersebut. Sekian laporan yang dapat kami sampaikan mengenai final project ini, kurang lebihnya mohon maaf, terima kasih.
+</p>
