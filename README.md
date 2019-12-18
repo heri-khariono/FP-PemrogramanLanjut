@@ -9,17 +9,25 @@ Final project yang kami kerjakan dengan judul “Aplikasi Pelabuhan” merupakan
 <h3>Rumusan Masalah</h3>
 <p>
 Permasalahan yang akan diselesaikan dari final project ini adalah :
-1.	Bagaimana cara menuliskan source code yang efisien ?
-2.	Bagaimana cara membuat program yang mudah dipahami ?
-3.	Bagaimana cara membuat program yang menerapkan metode searching dan sorting sesuai ketentuan ?
-4.	Bagaimana cara membuat program yang memiliki lebih fungsional ?
+<br/>
+ 1.	Bagaimana cara menuliskan source code yang efisien ?
+<br/>
+ 2.	Bagaimana cara membuat program yang mudah dipahami ?
+<br/>
+ 3.	Bagaimana cara membuat program yang menerapkan metode searching dan sorting sesuai ketentuan ?
+<br/>
+ 4.	Bagaimana cara membuat program yang memiliki lebih fungsional ?
 </p>
 
 <h4>Tujuan</h4>
 <p>
 Tujuan yang akan dicapai dari final project ini adalah :	
-1.	Dapat menuliskan source code yang efisien.
-2.	Dapat membuat program yang mudah dipahami.
-3.	Dapat membuat program yang menerapkan metode searching dan sorting sesuai ketentuan.
-4.	Dapat membuat program yang memiliki lebih fungsional
+<br/>
+ 1.	Dapat menuliskan source code yang efisien.
+<br/>
+ 2.	Dapat membuat program yang mudah dipahami.
+<br/>
+ 3.	Dapat membuat program yang menerapkan metode searching dan sorting sesuai ketentuan.
+<br/>
+ 4.	Dapat membuat program yang memiliki lebih fungsional
 </p>
