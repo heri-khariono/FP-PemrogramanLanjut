@@ -22,8 +22,9 @@ int i=0;
 void tambah_data();
 void tampil_data();
 void ubah_data();
+void cari_data();
 void urut_data();
-	
+
 int main() {
 	int menu;
 	system("color f0");
@@ -63,6 +64,7 @@ int main() {
 				break;
 			case 4 :
 				system("cls");
+				cari_data();
 				goto utama;
 				break;
 			case 5 :
@@ -354,6 +356,148 @@ void ubah_data(){
 		tampil_data(j);
 		getch();
 		system("cls");
+	}
+}
+
+//Pencarian Data
+int jump_search1(struct pelabuhan dt[],int size, char cari_nopol[]){ 
+	int i;
+	int target =0;
+	int mulai = 0;
+	int selesai = sqrt(size);
+	
+	while (strcmp(dt[target].nopol,cari_nopol)!=0 && target <= size)
+	{
+		target++;
+	}
+	while (strcmp(dt[mulai].nopol,cari_nopol) != 0 && target>mulai)
+	{
+		mulai += selesai;
+	}
+	
+	mulai = mulai - selesai; // mundur 
+	
+	for(i=mulai; i<=target; i++){
+		
+		if (strcmp(cari_nopol,dt[i].nopol)==0)
+		{
+			return i;
+		}
+	}
+	return -1;
+}
+
+
+int jump_search2(struct pelabuhan dt[], int size, int cari){//nomor tiket
+	int i;
+	int mulai = 0;
+	int selesai = sqrt (size);
+	
+	while (dt[selesai].no_tiket <= cari && selesai < size){
+		mulai = selesai;
+		selesai +=sqrt (size);
+		if(selesai > size-1){
+		selesai = size;
+		}
+	}
+	for (i=mulai;i<selesai; i++){
+		if(dt[i].no_tiket==cari){
+			return i;
+		}
+		else
+			return -1;
+	}
+}
+
+int jump_search3(struct pelabuhan dt[], int size, int cari){//bobot kendaraan
+	int i;
+	int mulai = 0;
+	int selesai = sqrt(size);
+	
+	while (dt[selesai].bobot <= cari && selesai < size){
+		mulai = selesai;
+		selesai +=sqrt (size);
+		if(selesai > size-1){
+			selesai = size;
+		}
+	}
+	for (i=mulai;i<selesai; i++){
+		if(dt[i].bobot==cari){
+			return i;
+		}
+		else
+			return -1;
+	}
+}
+
+void cari_data(){
+	int pil, cari;
+	char cari_nopol[60];
+	
+	if (i==0){
+		printf ("\n\n\t\tData Kosong, harap mengisi data terlebih dahulu...\n\n");
+		getch();
+		system("cls");
+	}
+	else{
+		printf("Search data berdasarkan : \n");
+		printf("1. Nomor Kendaraan\n");
+		printf("2. Nomor Tiket\n");
+		printf("3. Bobot Kendaraan\n\n");
+		printf("Masukkan pilihan menu : ");
+		scanf("%d", &pil);
+		
+		if( pil == 1 ){
+			printf("Masukkan Nomor Kendaraan : "); 
+			fflush(stdin); scanf("%s", &cari_nopol);
+		
+		int y;
+		y=jump_search1(data, i, cari_nopol);
+		if(y == -1){
+			printf("\n\t\tNomor Kendaraan Tidak Ditemukan !!");
+		}
+		else{
+			view(y);
+		}
+		getch();
+		system("cls");
+	}
+	else if( pil == 2 ){
+		printf("Masukkan Nomor Tiket : ");
+		fflush(stdin);scanf("%s", &cari);
+		
+		int y;
+		y=jump_search2(data, 0, cari);
+		if(y == -1){
+			printf("\n\t\tNomor Kendaraan Tidak Ditemukan !!");
+		}
+		else{
+			view(y);
+		}
+		getch();
+		system("cls");
+	}
+	else if( pil == 3 ){
+		printf("Masukkan Nomor Kendaraan : ");
+		fflush(stdin); scanf("%s", &cari);
+		
+		int y;
+		y=jump_search3(data, 0, cari);
+		if(y == -1){
+			printf("\n\t\tNomor Kendaraan Tidak Ditemukan !!");
+		}
+		else{
+			view(y);
+		}
+		getch();
+		system("cls");
+	}
+	else{
+		printf("Pilihan yang anda masukkan tidak tersedia !!\n");
+	}
+	getch();
+	system("cls");
+	main();
 	}
 }
 
